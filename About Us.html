@@ -1,0 +1,293 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+
+<style>
+body {
+    font-family: "sans-serif" ;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+div.b {
+    text-align: left;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<body bgcolor = "lightblue">
+<font face="Algerian">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="HomePage.html">Home</a>
+  <a href="Hyderabad.html">Hyderabad</a>
+  <a href="Vijayawada.html">Vijayawada</a>
+  <a href="Vizag.html">Vizag</a>
+  <a href="Distance Calculator.html">Distance Calculator</a>
+  <a href="Refineries Map.html">Map</a>
+  <a href="About Us.html">About Us</a>
+  <a href="Contact Us.html">Contact Us</a>
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Open</span>
+<center>
+<img src="Images/ACE.PNG" alt="ACE" class="center" height="45%" width="570px"></center><br><br>
+
+<form action="https://www.google.com/search" class="searchform" align ="center" width="30px" height="50px" "method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden">
+
+<input autocomplete="off" class="form-control search" name="q" placeholder="Search in example.com" required="required"  type="text">
+<button class="button" type="submit">Search</button>
+</form>
+<br>
+
+
+</font>
+<br>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</font>
+<body>
+<font face="Algerian">
+<center><h1>About Us</h1></center>
+
+<center><h2>ACE ENTERPRISES</h2></center><br>
+</font>
+<button class="collapsible">Information</button>
+<div class="content">
+<p> Registered in 2014, Ace Enterprises has made a name for itself in the list of top Software Development, Website Development companies of India.<br>
+ACE Enterprises has been ranked in Top 100 companies of India delivering excellent customer service. <br> 
+Ace Enterprises is listed in Trade India's list of verified sellers offering quality as well as creativity. <br> 
+The Head office of ACE Enterprises is located in Mullana, Ambala.
+Feel free to contact us.</p>
+</div>
+
+
+<p><h3> Petroleum, Oil & Gas Refineries in the following cities: </h3></p>
+
+<button class="collapsible">Hyderabad</button>
+<div class="content">
+  <p> 
+
+
+<h3> Few Oil, Gas companies in Hyderabad </h3>
+<table border = "1">
+<tr>
+<th> Name </th>
+<th> Address </th>
+<th> Industry Type </th>
+<th> Phone Number </th>
+<th> Website </th>
+</tr>
+<tr>
+<td> Kosan Crisplant India </td>
+<td> H.No.238/A, M.L.A.Colony	Road No.12, Banjara Hills
+      Hyderabad	Telangana - 500034  </td>
+<td> Petroleum , Oil , Gas , Refineries </td>
+<td> (040) 40068080 </td>
+<td> <a href = "www.kosancrisplant.com"> www.kosancrisplant.com </a></td>
+</tr>
+<tr>
+<td> Balaji Pressure vessels Limited </td>
+<td> Parishram Bhavan, 2nd Floor, APIDC Building,	
+      Hyderabad	Telangana - 500004 </td>
+<td> Petroleum , Oil , Gas , Refineries </td>
+<td> (040) 66566986 </td>
+<td> <a href = "www.bglgas.com"> www.bglgas.com </a> </td>
+</tr>
+<tr>
+<td> NavBharath Gas Company Pvt Limited </td>
+<td> 4th Floor, Plot#63,, Amar Cooperative Society, Madhapur, Hyderabad, Telangana - 500081 </td>
+<td> Petroleum , Oil , Gas , Refineries </td>
+<td> 040 4002 3759 </td>
+<td> <a href = "www.navbharathgas.com"> www.navbharathgas.com </a> </td>
+</table>
+
+</p>
+</div>
+
+<button class="collapsible">Vijayawada</button>
+<div class="content">
+<p> 
+
+<h3> Few Oil, Gas companies in Vijayawada </h3>
+<table border = "1">
+<tr>
+<th> Name </th>
+<th> Address </th>
+<th> Industry Type </th>
+<th> Phone Number </th>
+<th> Website </th>
+</tr>
+<tr>
+<td> Indian Oil Corporation Limited </td>
+<td> Vijayawada Area Office and Divisional Office, 2nd FLOOR, GVR TOWERS, Vijayawada, Andhra Pradesh - 520008  </td>
+<td> Petroleum , Oil , Gas , Refineries </td>
+<td> 0866 254 6704 </td>
+<td> <a href = "www.iocl.com"> www.iocl.com </a> </td>
+</tr>
+<tr>
+<td> Maruti Gas Company </td>
+<td> Parishram Bhavan, 2nd Floor, APIDC Building,	
+      Hyderabad	Telangana - 500004 </td>
+<td> Petroleum , Oil , Gas , Refineries </td>
+<td> 0866 254 6704 </td>
+<td> No Official Website </td>
+</tr>
+<tr>
+<td> HP Petroleum Limited </td>
+<td> 23-2-9, Lakshmi Nagar, Satyanarayanpuram, Vijayawada, Andhra Pradesh - 520011 </td>
+<td> Petroleum , Oil , Gas </td>
+<td> 0866 253 5596 </td>
+<td> <a href = "www.myhpgas.in"> www.myhpgas.com </a> </td>
+</table>
+
+</p>
+</div>
+<button class="collapsible">Vizag</button>
+<div class="content">
+   
+<p> 
+
+<h3> Few Oil, Gas companies in Vizag </h3>
+<table border = "1">
+<tr>
+<th> Name </th>
+<th> Address </th>
+<th> Industry Type </th>
+<th> Phone Number </th>
+<th> Website </th>
+</tr>
+<tr>
+<td> HPCL Black Oil Terminal </td>
+<td> Coastal Andhra Region, HPCL Steel Plant, Visakhapatnam, Andhra Pradesh - 530011  </td>
+<td> Petroleum , Oil , Gas , Refineries </td>
+<td> 093942 82666 </td>
+<td> No Official Website </td>
+</tr>
+<tr>
+<td> Bharat Petroleum Corporation Limited </td>
+<td> 2-a Gautami Apartment, K Pudi Layout, Visakhapatnam, Andhra Pradesh - 530003 </td>
+<td> Petroleum , Oil , Gas </td>
+<td> 089127 36469 </td>
+<td> <a href = "www.bharatpetroleum.com"> www.bharatpetroleum.com </a> </td>
+</tr>
+<tr>
+<td> Hindustan Petroleum Corporation Limited </td>
+<td> Gajuwaka - Scindia Rd, HPCL Steel Plant, Visakhapatnam, Andhra Pradesh - 530011 </td>
+<td> Petroleum, Oil , Gas , Refineries </td>
+<td> 18001214725 </td>
+<td><a href = "www.hindustanpetroleum.com"> www.hindustanpetroleum.com </a> </td>
+</table>
+
+</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script><br><br>
+
+
+<font face="Algerian">
+
+<center>
+<img src="Images/Logo.png" alt="Logo" class="center" height="40%" width="350px"><br><br>
+<p align="center">
+COPYRIGHT <br>
+<a href = "mailto:sainyammahajan.sd@mmumullana.org"> Got any issues? Contact Us <br></a>
+<marquee> SAVE THE NON-RENEWABLE RESOURCES </marquee></span><br>
+<a href = "https://www.academy.carterradley.com"> TAKE ME TO ACE ENTERPRISES </a>
+</p>
+</div>
+</font>
+</body>
+</html> 
+
+

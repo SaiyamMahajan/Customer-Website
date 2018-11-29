@@ -1,0 +1,744 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<br>
+
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+
+<style>
+body {
+    font-family: "sans-serif" ;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+div.b {
+    text-align: left;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+ 
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <div class>
+    </div>
+  </body>
+</html>
+
+
+
+<font face="Algerian">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="HomePage.html">Home</a>
+  <a href="Hyderabad.html">Hyderabad</a>
+  <a href="Vijayawada.html">Vijayawada</a>
+  <a href="Vizag.html">Vizag</a>
+  <a href="Distance Calculator.html">Distance Calculator</a>
+  <a href="Refineries Map.html">Map</a>
+  <a href="About Us.html">About Us</a>
+  <a href="Contact Us.html">Contact Us</a>
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Open</span>
+<center>
+<img src="Images/ACE.PNG" alt="ACE" class="center" height="45%" width="550px"></center><br><br>
+
+<form action="https://www.google.com/search" class="searchform" align ="center" width="30px" height="50px" "method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden">
+
+<input autocomplete="off" class="form-control search" name="q" placeholder="Search in example.com" required="required"  type="text">
+<button class="button" type="submit">Search</button>
+</form>
+<br>
+
+
+</font>
+<br>
+
+<div id="googleMap" style="width:100%;height:600px;">
+</div>
+<br>
+
+<script>
+
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(17.2206315,80.6542347),
+            zoom:5,
+        };
+        var map =new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+        var marker = new google.maps.Marker({
+            position:{lat:17.4126274,lng:78.2679578},
+            map:map,
+            title:"Hyderabad\nLatitude: 17.4126274\nLongitude: 78.2679578",
+            icon: "3.png",
+            animation: google.maps.Animation.BOUNCE
+        });
+
+        var marker = new google.maps.Marker({
+            position:{lat:16.5103177,lng:80.5744204},
+            map:map,
+            title:"Vijayawada\nLatitude: 16.5103177\nLongitude: 80.5744204",
+            icon: "2.png",
+            animation: google.maps.Animation.BOUNCE
+        });
+
+        var marker = new google.maps.Marker({
+            position:{lat:17.7389495,lng:83.1225035},
+            map:map,
+            title:"Vizag\nLatitude: 17.7389495\nLongitude: 83.1225035",
+            icon: "1.png",
+            animation: google.maps.Animation.BOUNCE
+        });
+    }
+
+
+</script>
+
+
+
+<script
+   
+     <src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7P57mjM3GiufAaSn5mzBBzcEZBWsWxHI&callback=myMap">
+
+</script>
+</font>
+
+
+<br>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+ 
+    background-image: url("Refinery.jpg");
+
+    
+    min-height: 500px; 
+
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+
+
+<div class="parallax"></div>
+
+<div style="height:100px;background-color:peach;font-size:20px">
+<br>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HomePage</title>
+        <style type="text/css">
+            
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: sans-serif;
+                font-weight: 300;
+            }
+            .container {
+                width: 430px;
+                margin: 0 auto;
+                padding: 170px 0;
+            }
+            h1 {
+                font-family: Cinzel, serif;
+                font-weight: 400;
+                font-size: 60px;
+                line-height: 55px;
+                color: #373f51;
+                margin-bottom: 50px;
+            }
+            .container p {
+                font-size: 16px;
+                color: #58a4b0;
+                margin-bottom: 100px;
+            }
+            .quote-button {
+                display: block;
+                text-decoration: none;
+                padding: 12px 0;
+                color: #373f51;
+                background-color: #d8dbe2;
+                text-transform: uppercase;
+                font-size: 14px;
+                text-align: center;
+            }
+            .quote-container blockquote {
+                display: none;
+                padding: 40px;
+                background-color: #58a4b0;
+                color: #fff;
+                font-size: 24px;
+                font-style: italic;
+            }
+            
+        </style>
+    </head>
+    <body>
+       
+        <div class="container"><br>
+           <center><img src="Images/Logo.png" alt="Logo" class="center" height="45%" width="380px"></center><br><br><br><br>
+            <p>"A century ago, petroleum - what we call oil - was just an obscure commodity; today it is almost as vital to human existence as water."<br>
+               - James Buchanan<br><br>
+            "I think God has blessed this country with enormous natural resources, and we should pursue all of the above <br> 
+         We should be developing oil, and gas, and coal, and nuclear, and wind, and solar, and ethanol, and biofuels."<br>
+              - Anonymous <br></p>
+
+            <div class="quote-container">
+                <a href="#" class="quote-button">Show more</a>
+<blockquote>India's estimated reserves of oil amounted to over 600 million tons in 2016 mainly in offshore oil fields in the Arabian Sea and Assam.<br>
+India imports around 75 % of its total oil consumption. Public sector companies dominate the oil and gas sector.<br>
+Reliance India Limited's Jamnagar (Gujarat) oil refinery is the largest in the world.<br>
+Cairn, Oil and Gas vertical of Vedanta Limited, is the largest private sector crude oil producer in India.<br></blockquote>
+            </div>
+        </div>
+        </font>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            (function(){
+                
+                var quoteButton = $('.quote-button'),
+                    blockquote = $('blockquote');
+                
+                quoteButton.on('click', function(e) {
+                    e.preventDefault();
+                    var quoteButtonText = quoteButton.text();
+                    
+                    blockquote.slideToggle(200, function(){
+                        quoteButtonText == "Some Facts" ? quoteButton.text("Show Less") : quoteButton.text("Show More");
+                    });
+    
+                });
+                
+            })();
+            
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta charset="utf-8">
+
+<style type="text/css">
+body {
+background-color: #f4f4f4;
+color: black;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5em;
+}
+a { text-decoration: none; }
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+#login {
+margin: 50px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #e5e5e5;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 14px;
+width: 300px;
+-webkit-appearance:none;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 300px;
+-webkit-appearance:none;
+}
+form fieldset a {
+color: #5a5656;
+font-size: 10px;
+}
+form fieldset a:hover { text-decoration: underline; }
+.btn-round {
+background-color: #5a5656;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+color: #f4f4f4;
+display: block;
+font-size: 12px;
+height: 50px;
+line-height: 50px;
+margin: 30px 125px;
+text-align: center;
+text-transform: uppercase;
+width: 50px;
+}
+.facebook-before {
+background-color: #0064ab;
+border-radius: 3px 0px 0px 3px;
+-moz-border-radius: 3px 0px 0px 3px;
+-webkit-border-radius: 3px 0px 0px 3px;
+color: #f4f4f4;
+display: block;
+float: left;
+height: 50px;
+line-height: 50px;
+text-align: center;
+width: 50px;
+}
+.facebook {
+background-color: #0079ce;
+border: none;
+border-radius: 0px 3px 3px 0px;
+-moz-border-radius: 0px 3px 3px 0px;
+-webkit-border-radius: 0px 3px 3px 0px;
+color: #f4f4f4;
+cursor: pointer;
+height: 50px;
+text-transform: uppercase;
+width: 250px;
+}
+.twitter-before {
+background-color: #189bcb;
+border-radius: 3px 0px 0px 3px;
+-moz-border-radius: 3px 0px 0px 3px;
+-webkit-border-radius: 3px 0px 0px 3px;
+color: #f4f4f4;
+display: block;
+float: left;
+height: 50px;
+line-height: 50px;
+text-align: center;
+width: 50px;
+}
+.twitter {
+background-color: #1bb2e9;
+border: none;
+border-radius: 0px 3px 3px 0px;
+-moz-border-radius: 0px 3px 3px 0px;
+-webkit-border-radius: 0px 3px 3px 0px;
+color: #f4f4f4;
+cursor: pointer;
+height: 50px;
+text-transform: uppercase;
+width: 250px;
+}
+</style>
+</head>
+<body>
+
+
+<div class = 'b' >
+<div id="login">
+<form action="javascript:void(0);" method="get">
+<fieldset>
+<p><input type="text" required value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p>
+<p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p>
+<p><a href="Forgot Password.html">Forgot Password?</a></p>
+<p><input type="submit" value="Login"></p>
+</fieldset>
+</form>
+<p><span class="btn-round">or</span></p>
+<p>
+<a class="facebook-before"></a>
+<a href="https://en-gb.facebook.com/login/">
+<button class="facebook">Login Using Facbook</button>
+</p>
+<p>
+<a class="twitter-before"></a>
+<a href="https://twitter.com/login">
+<button class="twitter">Login Using Twitter</button>
+</a>
+</p>
+</div> <!-- end login -->
+</div>
+</body>
+
+
+
+<br><br>
+
+
+<font face="Algerian" size = "4px" color = #58a4b0>
+
+
+<div style="float: left;">
+Subscribe To Our Daily Updates:
+<br><br>
+
+<form>
+First Name:
+<input type="text" name="firstname" value="">
+<br><br>
+Last Name:
+<input type="text" name="lastname" value="">
+<br><br>
+ 
+<input type="radio" name="gender" value="male"> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br><br>
+
+Enter Your Age:
+<input type="number" name="" value="">
+
+<br><br>
+
+Enter Your E-Mail:
+
+<label class ='switch'>
+<input type = checkbox" class = "checkbox" />
+<div class = ""></div>
+<br>
+</label>
+
+</form>
+
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+<button id="myBtn">Submit</button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <font face="sans-serif" color = "black" >
+    <p><b> You have been registered successfully. <br>
+   Thank you for filling out the form! </b></p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+</body>
+</html>
+
+
+<br><br>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7P57mjM3GiufAaSn5mzBBzcEZBWsWxHI&callback=myMap"></script>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+
+
+<center>
+
+<br><br><br><br><br><br><br><br><br>
+
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HomePage</title>
+        <style type="text/css">
+            
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .info {
+                display: block;
+                position: relative;
+                font-family: sans-serif;
+                width: 200px;
+                padding: 20px 0;
+                margin: 200px auto;
+                color: #000;
+                font-size: 14px;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                border-radius: 10px;
+                border: 1px solid #000;
+            }
+            
+            .tooltip {
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 120%;
+                width: 190px;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #09f;
+                color: #fff;
+                line-height: normal;
+                text-transform: none;
+                font-size: 12px;
+                opacity: 0;
+                transform: scaleY(0);
+                transition: all 0.1s ease;
+            }
+            .tooltip:after {
+                position: absolute;
+                content: '';
+                left: 10px;
+                bottom: -5px;
+                width: 0;
+                height: 0;
+                border-top: 5px solid #09f;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+            }
+            .info:hover .tooltip {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        
+        
+        <a href="#" class="info" data-tooltip-text="We hope that you have a nice day"> Click this to reach the starting of the Page</a>
+        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        (function() {
+            
+            var infoElem = $('.info');
+                
+            infoElem.each(function() {
+                var self = $(this),
+                    selfTooltipText = self.data('tooltip-text');
+                if ( selfTooltipText ) $('<span/>', {class: 'tooltip', text: selfTooltipText}).appendTo(self);
+            });
+                 
+        })();
+           
+    </script>
+
+    </body>
+</html>
+
+</font>
+<font face="Algerian" color = "darkblue" >
+
+<img src="Robots.jpg" alt="Logo" height="80%" width="100%"><br><br>
+<p align="center">
+COPYRIGHT <br>
+<a href = "mailto:sainyammahajan.sd@mmumullana.org"> Got any issues? Contact Us </a> <br>
+<marquee> SAVE THE NON-RENEWABLE RESOURCES </marquee><br>
+<a href = "https://www.academy.carterradley.com"> TAKE ME TO ACE ENTERPRISES </a>
+</p>
+</font>
+</div>
+</body>
+</html> 
